@@ -1,16 +1,42 @@
-# chatwith
+Flutter Chat App with Firebase Authentication & SQLite
+The Flutter Chat App is a real-time messaging application built using Flutter, Firebase Authentication, and SQLite for local data storage. It provides a smooth and interactive chatting experience with essential authentication and messaging features.
 
-A new Flutter project.
+Key Features:
+User Authentication (Firebase Auth):
+Users can sign up and log in using their email and password.
+Firebase Authentication ensures secure login and account management.
 
-## Getting Started
+Email Verification:
+A verification email is sent to users upon registration.
+Users must confirm their email before accessing the chat.
 
-This project is a starting point for a Flutter application.
+One-to-One Chat System:
+Users can send and receive real-time messages.
+Chats are stored locally using SQLite for quick access and offline support.
 
-A few resources to get you started if this is your first Flutter project:
+Logout and Session Management:
+Users can securely log out, and session data is managed via Firebase Auth.
+SQLite helps retain user sessions for quick logins.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Message Storage with SQLite:
+Messages are cached locally in SQLite for offline access.
+Sent messages sync automatically when the internet is available.
+User Profile Management:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Offline Mode Support:
+Users can view past conversations without an internet connection.
+Messages sent offline are queued and sent when online.
+
+Tech Stack Used:
+Frontend: Flutter (Dart)
+Authentication: Firebase Authentication
+Database: SQLite (Local Storage), Firestore (Cloud Storage for User Data)
+Local Storage: SharedPreferences (For storing login state)
+
+
+
+
+
+
+
+
